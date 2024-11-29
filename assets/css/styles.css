@@ -343,6 +343,7 @@ a {
 
 .work {
   background: #f6fbff;
+  margin-bottom: 170px;
 }
 
 .work .section-heading {
@@ -353,4 +354,58 @@ a {
 .work .section-desc {
   width: 486px;
   margin-top: 18px;
+}
+
+/* Work row */
+.work-row {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 100px;
+}
+/* Word card */
+
+.work-card {
+  margin-top: 86px;
+  width: 370px;
+  height: 402px;
+  border-radius: 4px;
+  background: #fff;
+  border: 16px solid #eaf6ff;
+}
+
+.card-item {
+  margin: 43px 42px 43px 42px;
+}
+
+.work-body__heading {
+  margin-top: 18px;
+  color: #10375c;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.38; /* 138.462% */
+}
+
+.work-body__item .desc {
+  width: 254px;
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
+.work-body__item .desclv1 {
+  color: #575f66;
+}
+
+.work-card--active {
+  border: 16px solid #2e80ce;
+  margin-top: 70px;
+}
+
+.work-card--active .desc--active {
+  color: #2e80ce;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
 }
