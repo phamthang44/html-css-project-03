@@ -470,3 +470,20 @@ a {
   font-weight: 300;
   line-height: 1.66; /* 166.667% */
 }
+
+/* Team */
+.Team__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -80px;
+}
+.Team__heading {
+  text-align: center;
+}
+
+.Team__heading-btn {
+  display: inline-block;
+  margin-top: 38px;
+}
