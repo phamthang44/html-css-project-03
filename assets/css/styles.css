@@ -537,7 +537,7 @@ a {
 }
 
 /* Team chevrons */
-.Team .chevrons {
+.chevrons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -582,7 +582,6 @@ a {
 }
 
 .CTA__body-content {
-  position: absolute;
   height: 427px;
   width: 1170px;
   display: flex;
@@ -636,4 +635,102 @@ a {
 .CTA__info img:hover {
   opacity: 0.6;
   transform: scale(1.1);
+}
+
+/* Blog  */
+.Blog__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Blog__media {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 470px;
+  margin-right: 102px;
+}
+
+.Blog__media .Blog__link {
+  color: #10375c;
+  font-family: "Inter";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.55; /* 155.556% */
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  margin: 28px 0 28px 0;
+}
+
+.Blog__media .chevrons {
+  margin: 0;
+}
+
+/* Blog card */
+.Blog__card {
+  width: 270px;
+  height: 375px;
+  border-radius: 12px;
+  border: 1px solid #e8ebee;
+  background: #fff;
+}
+
+.Blog__card:hover {
+  transform: scale(1.01);
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.Blog__card:first-child {
+  margin-right: 13px;
+}
+
+.Blog__card .Blog__card-image {
+  object-fit: cover;
+}
+
+.Blog__card-info {
+  padding: 18px 24px 21px 22px;
+}
+
+.Blog__card .Blog__title {
+  color: #10375c;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.62; /* 162.5% */
+}
+
+.Blog__desc {
+  margin-top: 10px;
+  color: #575f66;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.71; /* 171.429% */
+}
+
+.Blog__detail {
+  display: inline-block;
+  margin-top: 12px;
+  color: #10375c;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.Blog__detail:hover {
+  color: #2e80ce;
+}
+
+.Blog__detail--active {
+  color: #2e80ce;
+}
+
+.Blog__card--active {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
 }
