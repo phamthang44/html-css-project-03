@@ -575,3 +575,65 @@ a {
 .CTA {
   margin: 170px 0 170px 0;
 }
+
+.CTA__content {
+  max-height: 522px;
+  width: 100%;
+}
+
+.CTA__body-content {
+  position: absolute;
+  height: 427px;
+  width: 1170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e80ce;
+}
+
+.CTA__background--white {
+  width: 100%;
+  height: calc(522px - 427px);
+  background-color: none;
+}
+
+.CTA__image {
+  width: 284px;
+  height: 521px;
+  position: relative;
+  top: -47px;
+  margin-right: 160px;
+  object-fit: cover;
+}
+
+.CTA__info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 586px;
+  height: auto;
+}
+
+.CTA__heading {
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1px;
+  width: 489px;
+  color: #fff;
+}
+
+.CTA__desc {
+  color: #fff;
+  margin-top: 18px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.66; /* 166.667% */
+}
+
+.CTA__info a {
+  margin-top: 38px;
+  margin-right: 28px;
+}
+
+.CTA__info img:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
