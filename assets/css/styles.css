@@ -472,6 +472,7 @@ a {
 }
 
 /* Team */
+
 .Team__header {
   display: flex;
   flex-direction: column;
@@ -486,4 +487,91 @@ a {
 .Team__heading-btn {
   display: inline-block;
   margin-top: 38px;
+}
+
+/* Team Row */
+.Team-row {
+  display: flex; /* Align the cards horizontally */
+  flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.Team-card__items {
+  width: 262px;
+  height: 343px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.Team-card__item {
+  width: 262px;
+  height: 318px;
+  border-radius: 6px;
+  background-color: #eaf6ff;
+}
+
+.Team-card__image {
+  margin-top: 28px;
+  width: 262px;
+  height: 290px;
+  border-radius: 6px;
+  background-color: #eaf6ff;
+}
+
+.Team-card__items .member-name {
+  margin-top: 12px;
+  color: #10375c;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+}
+
+.Team-card__items .address-hospital {
+  color: #575f66;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.85; /* 185.714% */
+}
+
+/* Team chevrons */
+.Team .chevrons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 72px;
+  width: 90px;
+  height: 36px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chevrons-1 {
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #575f66;
+}
+.chevrons-2 {
+  border-radius: 50%;
+  background-color: #2e80ce;
+}
+
+.chevrons-1:hover {
+  background-color: #c9d2da;
+}
+
+.chevrons-2:hover {
+  opacity: 0.9;
+}
+
+.Team .chevrons .chevrons-1,
+.chevrons-2 {
+  line-height: 0;
+}
+
+/* CTA */
+.CTA {
+  margin: 170px 0 170px 0;
 }
