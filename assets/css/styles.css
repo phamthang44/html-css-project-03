@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +17,14 @@ body {
   font-family: "Sora", sans-serif;
 }
 /* Common */
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+}
+
 .container {
   width: 1170px;
   max-width: calc(
@@ -102,9 +111,13 @@ a {
 
 /* Header top */
 .header-top {
+  /* position: sticky;
+  top: 0;
+  z-index: 1000;  */
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
 }
 
 .navbar__list {
@@ -400,9 +413,20 @@ a {
   color: #575f66;
 }
 
-.work-card--active {
+.work-body__desc:hover {
+  color: var(--main-color);
+}
+/* .work-card--active {
   border: 16px solid var(--main-color);
   margin-top: 70px;
+} */
+
+.work-card:hover {
+  cursor: pointer;
+  border: 16px solid var(--main-color);
+  margin-top: 70px;
+  transition: 0.5s;
+  transform: translateY(-5px);
 }
 
 .work-card--active .desc--active {
@@ -549,6 +573,10 @@ a {
   margin-right: auto;
 }
 
+.chevrons:hover {
+  color: #fff;
+}
+
 .chevrons-1 {
   border-radius: 50%;
   background-color: #fff;
@@ -556,15 +584,16 @@ a {
 }
 .chevrons-2 {
   border-radius: 50%;
-  background-color: var(--main-color);
+  background-color: #fff;
+  border: 1px solid #575f66;
 }
 
 .chevrons-1:hover {
-  background-color: #c9d2da;
+  background-color: var(--main-color);
 }
 
 .chevrons-2:hover {
-  opacity: 0.9;
+  background-color: var(--main-color);
 }
 
 .Team .chevrons .chevrons-1,
@@ -682,6 +711,14 @@ a {
 }
 
 .Blog__card:hover {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+  transition: 0.5s;
+  transform: translateY(-10px);
+}
+
+.Blog__card:hover {
   transform: scale(1.01);
   opacity: 0.9;
   cursor: pointer;
@@ -773,4 +810,146 @@ a {
 .CTA-appointment {
   display: block;
   margin-bottom: 100px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--header-bg);
+
+  padding-top: 100px;
+}
+
+.footer__row {
+  display: flex;
+}
+
+.footer__column {
+  margin-right: 78px;
+}
+
+.footer__heading {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+}
+
+.footer .footer__desc {
+  margin-top: 20px;
+  width: 336px;
+  color: #a9b3bb;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+}
+
+.footer__link {
+  color: #a9b3bb;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  white-space: nowrap;
+  line-height: 1.85; /* 185.714% */
+}
+
+.footer__link:hover {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.footer__list li {
+  width: 134px;
+  margin: 20px 0 10px 0;
+}
+
+.footer__list li:last-child {
+  margin-bottom: 28px;
+}
+
+.footer__social {
+  margin-top: 20px;
+  gap: 10px;
+  display: flex;
+  width: 116px;
+  height: 32px;
+  margin-bottom: 28px;
+}
+
+.footer__social a {
+  color: #2e80ce;
+}
+
+.footer__social a:hover {
+  background-color: #2e80ce;
+  color: #fff;
+  transition: 0.25s;
+}
+
+.footer__social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.footer-form {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.footer-form__input {
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid #406181;
+  width: 212px;
+  height: 46px;
+  outline: none;
+  background: transparent;
+  padding: 0 10px;
+}
+
+.footer-form__input::placeholder {
+  color: #9ca8b1;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
+}
+
+.footer-form__submit {
+  font-size: 1.2rem;
+  --height: 46px;
+  font-weight: 600;
+  border-radius: 4px;
+  min-width: 108px;
+  line-height: 1.86; /* 185.714% */
+  height: 46px;
+  margin-right: auto;
+}
+
+.footer__copyright {
+  height: 1px;
+  flex-shrink: 0;
+  background: #406181;
+  border: 1px solid transparent;
+}
+
+.footer__copyright-text {
+  padding: 28px 0 42px 0;
+  color: #aab3ba;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.86; /* 185.714% */
 }
