@@ -4,6 +4,7 @@
 
 :root {
   --header-bg: #10375c;
+  --main-color: #2e80ce;
 }
 
 html {
@@ -30,14 +31,14 @@ a {
 .btn {
   --height: 60px;
   display: inline-block;
-  background-color: #2e80ce;
+  background-color: var(--main-color);
   color: #fff;
   height: var(--height);
   min-width: 205px;
   padding: 0 20px;
   text-align: center;
   border-radius: 99px;
-  border: 1px solid #2e80ce;
+  border: 1px solid var(--main-color);
   font-size: 1.6rem;
   font-weight: 400;
   line-height: var(--height);
@@ -70,7 +71,7 @@ a {
 .logo__circle::before {
   width: 3em;
   height: 3em;
-  background-color: #2e80ce;
+  background-color: var(--main-color);
 }
 .logo__circle::after {
   position: absolute;
@@ -322,7 +323,7 @@ a {
 
 .service-item__icon-wrap--active {
   color: white;
-  background-color: #2e80ce;
+  background-color: var(--main-color);
 }
 
 /* service picture */
@@ -400,12 +401,12 @@ a {
 }
 
 .work-card--active {
-  border: 16px solid #2e80ce;
+  border: 16px solid var(--main-color);
   margin-top: 70px;
 }
 
 .work-card--active .desc--active {
-  color: #2e80ce;
+  color: var(--main-color);
   font-weight: 400;
   line-height: 1.75; /* 175% */
 }
@@ -555,7 +556,7 @@ a {
 }
 .chevrons-2 {
   border-radius: 50%;
-  background-color: #2e80ce;
+  background-color: var(--main-color);
 }
 
 .chevrons-1:hover {
@@ -587,7 +588,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2e80ce;
+  background-color: var(--main-color);
 }
 
 .CTA__background--white {
@@ -722,15 +723,54 @@ a {
 }
 
 .Blog__detail:hover {
-  color: #2e80ce;
+  color: var(--main-color);
 }
 
 .Blog__detail--active {
-  color: #2e80ce;
+  color: var(--main-color);
 }
 
 .Blog__card--active {
   border-radius: 12px;
   background: #fff;
   box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+}
+/* CTA-2 */
+.CTA-2 {
+  margin: 170px 0 170px 0;
+  height: 100%;
+}
+
+.CTA-2 .section-heading {
+  margin: 0;
+  margin-top: 100px;
+}
+
+.CTA-2 .section-heading::after {
+  content: "";
+  width: 136px;
+  height: 2px;
+  flex-shrink: 0;
+  background-color: var(--main-color);
+}
+
+.CTA-2 .section-desc {
+  margin: 0;
+  margin-top: 38px;
+  margin-bottom: 38px;
+  width: 617px;
+  text-align: center;
+}
+
+.CTA-2-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f6fbff;
+}
+
+.CTA-appointment {
+  display: block;
+  margin-bottom: 100px;
 }
